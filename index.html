@@ -1068,17 +1068,17 @@
     btn.textContent = 'Submitting...';
     btn.disabled = true;
 
+    const formData = new FormData();
+    formData.append('firstName', first.value.trim());
+    formData.append('lastName', last.value.trim());
+    formData.append('email', email.value.trim());
+    formData.append('businessName', bizName.value.trim());
+    formData.append('businessType', bizType.value);
+
     fetch(APPS_SCRIPT_URL, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        firstName: first.value.trim(),
-        lastName: last.value.trim(),
-        email: email.value.trim(),
-        businessName: bizName.value.trim(),
-        businessType: bizType.value
-      }),
-      mode: 'no-cors' // Apps Script requires no-cors
+      body: formData,
+      mode: 'no-cors'
     })
     .then(() => {
       document.getElementById('wlForm').style.display = 'none';
