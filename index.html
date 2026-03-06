@@ -8,16 +8,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --navy:      #0D1B2E;
-    --navy2:     #132033;
-    --blue:      #29ABE2;
-    --teal:      #1DBFCB;
-    --green:     #7AC943;
-    --gold:      #F7A21B;
+    --navy:      #0F1F35;
+    --navy2:     #1A2F45;
+    --blue:      #1BA3D5;
+    --teal:      #00BCC9;
+    --green:     #4CAF50;
+    --gold:      #FFA500;
     --white:     #FFFFFF;
-    --offwhite:  #F4F8FB;
+    --offwhite:  #F8FAFC;
     --gray:      #8A9BB0;
-    --dark-text: #1A2740;
+    --dark-text: #0D1117;
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -58,7 +58,7 @@
     text-decoration: none;
     transition: all 0.2s;
   }
-  .nav-cta:hover { background: #e5920a; transform: translateY(-1px); }
+  .nav-cta:hover { background: #FF8C00; transform: translateY(-1px); }
   .nav-notify {
     background: transparent;
     color: var(--teal);
@@ -88,7 +88,7 @@
     position: absolute;
     top: -100px; right: -100px;
     width: 700px; height: 700px;
-    background: radial-gradient(circle, rgba(41,171,226,0.12) 0%, transparent 65%);
+    background: radial-gradient(circle, rgba(27,163,213,0.18) 0%, transparent 65%);
     pointer-events: none;
   }
   .hero::after {
@@ -96,7 +96,7 @@
     position: absolute;
     bottom: -80px; left: -80px;
     width: 500px; height: 500px;
-    background: radial-gradient(circle, rgba(122,201,67,0.08) 0%, transparent 65%);
+    background: radial-gradient(circle, rgba(76,175,80,0.12) 0%, transparent 65%);
     pointer-events: none;
   }
 
@@ -115,9 +115,9 @@
   .coming-badge {
     display: inline-flex;
     align-items: center; gap: 8px;
-    background: rgba(122,201,67,0.15);
-    border: 1px solid rgba(122,201,67,0.35);
-    color: var(--green);
+    background: rgba(76,175,80,0.2);
+    border: 1px solid rgba(76,175,80,0.5);
+    color: #4CAF50;
     font-size: 11px; font-weight: 700;
     letter-spacing: 2px; text-transform: uppercase;
     padding: 6px 16px; border-radius: 100px;
@@ -184,19 +184,19 @@
     gap: 10px;
   }
   .cta-block.consumer {
-    background: rgba(41,171,226,0.1);
-    border: 1px solid rgba(41,171,226,0.2);
+    background: rgba(27,163,213,0.12);
+    border: 1px solid rgba(27,163,213,0.3);
   }
   .cta-block.business {
-    background: rgba(247,162,27,0.1);
-    border: 1px solid rgba(247,162,27,0.2);
+    background: rgba(255,165,0,0.12);
+    border: 1px solid rgba(255,165,0,0.3);
   }
   .cta-label {
     font-size: 10px; font-weight: 800;
     letter-spacing: 2px; text-transform: uppercase;
   }
-  .cta-block.consumer .cta-label { color: var(--blue); }
-  .cta-block.business .cta-label { color: var(--gold); }
+  .cta-block.consumer .cta-label { color: #1BA3D5; }
+  .cta-block.business .cta-label { color: #FFA500; }
   .cta-desc {
     font-size: 13px;
     color: rgba(255,255,255,0.55);
@@ -212,7 +212,7 @@
     gap: 6px; justify-content: center;
     box-shadow: 0 3px 14px rgba(41,171,226,0.3);
   }
-  .btn-blue:hover { background: var(--teal); transform: translateY(-2px); }
+  .btn-blue:hover { background: #00BCC9; transform: translateY(-2px); }
   .btn-gold {
     background: var(--gold); color: var(--navy);
     font-family: 'Montserrat', sans-serif;
@@ -282,9 +282,9 @@
   .section-eyebrow {
     font-size: 11px; font-weight: 800;
     letter-spacing: 3px; text-transform: uppercase;
-    color: var(--blue); margin-bottom: 14px;
+    color: #1BA3D5; margin-bottom: 14px;
   }
-  .section-eyebrow.green { color: #5a9e2e; }
+  .section-eyebrow.green { color: #4CAF50; }
   .section-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -292,8 +292,8 @@
     color: var(--dark-text);
     margin-bottom: 16px; line-height: 1.2;
   }
-  .section-title span { color: var(--blue); }
-  .section-title .green { color: var(--green); }
+  .section-title span { color: #1BA3D5; }
+  .section-title .green { color: #4CAF50; }
   .section-body {
     font-size: 16px; color: #5a6a7e;
     line-height: 1.75; margin-bottom: 20px;
@@ -310,7 +310,7 @@
   .benefit-list li::before {
     content: '';
     width: 20px; height: 20px; flex-shrink: 0;
-    background: var(--blue);
+    background: #1BA3D5;
     border-radius: 50%;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 13l4 4L19 7'/%3E%3C/svg%3E");
     background-size: 12px;
@@ -318,29 +318,29 @@
     background-repeat: no-repeat;
     margin-top: 2px;
   }
-  .benefit-list.green li::before { background-color: var(--green); }
+  .benefit-list.green li::before { background-color: #4CAF50; }
 
   .btn-primary-lg {
-    background: var(--blue); color: var(--white);
+    background: #1BA3D5; color: var(--white);
     font-family: 'Montserrat', sans-serif;
     font-weight: 700; font-size: 15px;
     padding: 15px 30px; border-radius: 8px;
     text-decoration: none; transition: all 0.2s;
     display: inline-flex; align-items: center; gap: 8px;
-    box-shadow: 0 4px 20px rgba(41,171,226,0.3);
+    box-shadow: 0 4px 20px rgba(27,163,213,0.35);
   }
-  .btn-primary-lg:hover { background: var(--teal); transform: translateY(-2px); }
+  .btn-primary-lg:hover { background: #00BCC9; transform: translateY(-2px); }
 
   .btn-green-lg {
-    background: var(--green); color: var(--navy);
+    background: #4CAF50; color: var(--white);
     font-family: 'Montserrat', sans-serif;
     font-weight: 800; font-size: 15px;
     padding: 15px 30px; border-radius: 8px;
     text-decoration: none; transition: all 0.2s;
     display: inline-flex; align-items: center; gap: 8px;
-    box-shadow: 0 4px 20px rgba(122,201,67,0.3);
+    box-shadow: 0 4px 20px rgba(76,175,80,0.35);
   }
-  .btn-green-lg:hover { background: #6ab535; transform: translateY(-2px); }
+  .btn-green-lg:hover { background: #45a049; transform: translateY(-2px); }
 
   /* FOR BUSINESSES */
   .business-section {
@@ -402,13 +402,13 @@
     line-height: 0.95; margin-bottom: 20px;
     color: var(--white);
   }
-  .summer-headline .blue { color: var(--blue); }
-  .summer-headline .green { color: var(--green); }
+  .summer-headline .blue { color: #1BA3D5; }
+  .summer-headline .green { color: #4CAF50; }
   .summer-sub {
     font-size: 18px; color: rgba(255,255,255,0.6);
     margin-bottom: 36px; line-height: 1.7;
   }
-  .summer-sub strong { color: var(--gold); font-weight: 700; }
+  .summer-sub strong { color: #FFA500; font-weight: 700; }
 
   /* CITIES */
   .cities-section {
@@ -436,13 +436,13 @@
     transition: all 0.2s;
   }
   .city-chip:hover {
-    border-color: var(--blue); color: var(--blue);
+    border-color: #1BA3D5; color: #1BA3D5;
     transform: translateY(-2px);
   }
   .city-chip.active {
-    background: var(--blue); border-color: var(--blue); color: var(--white);
+    background: #1BA3D5; border-color: #1BA3D5; color: var(--white);
   }
-  .city-chip.active:hover { background: var(--teal); border-color: var(--teal); }
+  .city-chip.active:hover { background: #00BCC9; border-color: #00BCC9; }
   .city-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
 
   /* WAITLIST */
@@ -593,7 +593,6 @@
   </a>
   <div class="nav-right">
     <a href="#" onclick="openConsumerModal(event)" class="nav-notify">Get Notified</a>
-    <a href="#waitlist" class="nav-cta">Join the Waitlist</a>
   </div>
 </nav>
 
@@ -719,7 +718,7 @@
         <li>No paper punch cards, no complicated setup</li>
         <li>Join now during our Early Adopter window and lock in founding member pricing</li>
       </ul>
-      <a href="#waitlist" class="btn-green-lg">Join the Waitlist — Lock In My Rate</a>
+      <a href="#bizForm" class="btn-green-lg">Lock In My Founding Rate</a>
     </div>
     <div style="background: rgba(255,255,255,0.04); border-radius:20px; padding:32px; border:1px solid rgba(122,201,67,0.15);">
       <p style="font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--green);margin-bottom:20px;">Coming at Launch</p>
@@ -802,6 +801,9 @@
       <p class="cta-card-eyebrow">I Want Deals</p>
       <h3>Download the App</h3>
       <p>It's free and it's live right now. Start earning points at local businesses today — and be ready when the full launch hits this summer.</p>
+      <div style="margin: 20px 0; border-radius: 8px; overflow: hidden; aspect-ratio: 16/9; max-width: 100%;">
+        <iframe style="width: 100%; height: 100%; border: none;" src="https://www.youtube.com/embed/3Niqzt5pgQA" title="Gimmzi App Demo" allowfullscreen="" loading="lazy"></iframe>
+      </div>
       <div class="consumer-dl">
         <a href="https://apps.apple.com/us/app/gimmzi-smart-rewards/id6502775032">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
@@ -853,7 +855,7 @@
     <a href="privacy.html">Privacy Policy</a>
     <a href="terms.html">Terms of Use</a>
     <a href="tel:8444446694">(844) 444-6694</a>
-    <a href="/cdn-cgi/l/email-protection#543c3138383b14333d39392e3d7a373b39"><span class="__cf_email__" data-cfemail="553d3039393a15323c38382f3c7b363a38">[email&#160;protected]</span></a>
+    <a href="mailto:hello@gimmzi.com">hello@gimmzi.com</a>
   </div>
 </footer>
 
@@ -1042,6 +1044,7 @@
   cursor: pointer;
 }
 .gm-select option { background: #0f1f3d; color: #fff; }
+.gm-submit-btn {
   padding: 14px;
   border-radius: 10px;
   border: none;
@@ -1050,9 +1053,13 @@
   font-weight: 700;
   font-size: 1rem;
   cursor: pointer;
-  transition: opacity 0.2s;
+  transition: all 0.2s;
 }
-.gm-submit-btn:hover { opacity: 0.9; }
+.gm-submit-btn:hover { 
+  opacity: 0.95; 
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(247, 162, 27, 0.3);
+}
 .gm-success {
   display: flex;
   flex-direction: column;
