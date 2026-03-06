@@ -606,31 +606,32 @@
         <div class="cta-block consumer">
           <span class="cta-label">Already a Member?</span>
           <p class="cta-desc">The app is live. Download it and start earning while you wait for the big launch.</p>
-          <a href="#waitlist" class="btn-blue">Download the App</a>
+          <a href="#" onclick="openDownloadModal(event)" class="btn-blue">Download the App</a>
         </div>
         <div class="cta-block business">
           <span class="cta-label">Own a Business?</span>
           <p class="cta-desc">Join the waitlist now and lock in your founding member rate before we go live.</p>
-          <a href="#waitlist" class="btn-gold">Join the Waitlist</a>
+          <a href="#" onclick="openWaitlistModal(event)" class="btn-gold">Join the Waitlist</a>
         </div>
       </div>
 
-      <div class="store-row">
-        <a href="#" class="store-btn">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-          <div class="store-btn-text">
-            <small>Download on the</small>
-            <strong>App Store</strong>
-          </div>
-        </a>
-        <a href="#" class="store-btn">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.3.16.64.18.96.06l13.2-7.62-2.82-2.84-11.34 10.4zm16.5-9.54L17.1 12.5l2.58-2.58 2.7 1.56c.78.44.78 1.76 0 2.22l-.7.52zm-16.5-8.98L13.5 15.66l2.82-2.84L3.14 5.2c-.32-.14-.66-.12-.96.04zm13.2 7.62-11.34 10.4.96.06 13.2-7.62-2.82-2.84z"/></svg>
-          <div class="store-btn-text">
-            <small>Get it on</small>
-            <strong>Google Play</strong>
-          </div>
-        </a>
+      <div class="hero-trust-strip">
+        <div class="hero-trust-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--blue)"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          <span>iOS &amp; Android</span>
+        </div>
+        <div class="hero-trust-divider"></div>
+        <div class="hero-trust-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--blue)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+          <span>Free to Download</span>
+        </div>
+        <div class="hero-trust-divider"></div>
+        <div class="hero-trust-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--blue)"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span>Real Rewards. Local Businesses.</span>
+        </div>
       </div>
+
     </div>
 
     <div class="hero-right">
@@ -657,11 +658,11 @@
         <li>Coming soon: earn points when you travel, book local stays, and get rewarded just for being a resident</li>
       </ul>
       <div style="display:flex; gap:12px; flex-wrap:wrap;">
-        <a href="#" class="btn-primary-lg">
+        <a href="https://apps.apple.com/us/app/gimmzi-smart-rewards/id6502775032" class="btn-primary-lg">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
           App Store
         </a>
-        <a href="#" class="btn-primary-lg">
+        <a href="https://play.google.com/store/apps/details?id=com.gimmzi&hl=en_US" class="btn-primary-lg">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.3.16.64.18.96.06l13.2-7.62-2.82-2.84-11.34 10.4zm16.5-9.54L17.1 12.5l2.58-2.58 2.7 1.56c.78.44.78 1.76 0 2.22l-.7.52zm-16.5-8.98L13.5 15.66l2.82-2.84L3.14 5.2c-.32-.14-.66-.12-.96.04zm13.2 7.62-11.34 10.4.96.06 13.2-7.62-2.82-2.84z"/></svg>
           Google Play
         </a>
@@ -790,11 +791,11 @@
       <h3>Download the App</h3>
       <p>It's free and it's live right now. Start earning points at local businesses today — and be ready when the full launch hits this summer.</p>
       <div class="consumer-dl">
-        <a href="#">
+        <a href="https://apps.apple.com/us/app/gimmzi-smart-rewards/id6502775032">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
           Download on the App Store
         </a>
-        <a href="#">
+        <a href="https://play.google.com/store/apps/details?id=com.gimmzi&hl=en_US">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.3.16.64.18.96.06l13.2-7.62-2.82-2.84-11.34 10.4zm16.5-9.54L17.1 12.5l2.58-2.58 2.7 1.56c.78.44.78 1.76 0 2.22l-.7.52zm-16.5-8.98L13.5 15.66l2.82-2.84L3.14 5.2c-.32-.14-.66-.12-.96.04zm13.2 7.62-11.34 10.4.96.06 13.2-7.62-2.82-2.84z"/></svg>
           Get it on Google Play
         </a>
@@ -823,13 +824,277 @@
     <a href="#">Privacy Policy</a>
     <a href="#">Terms of Use</a>
     <a href="tel:8444446694">(844) 444-6694</a>
-    <a href="mailto:hello@gimmzi.com">hello@gimmzi.com</a>
+    <a href="/cdn-cgi/l/email-protection#543c3138383b14333d39392e3d7a373b39"><span class="__cf_email__" data-cfemail="553d3039393a15323c38382f3c7b363a38">[email&#160;protected]</span></a>
   </div>
 </footer>
 
 
 
+<!-- DOWNLOAD MODAL -->
+<div id="downloadModal" class="gm-modal-overlay" onclick="closeModalOnOverlay(event,'downloadModal')">
+  <div class="gm-modal">
+    <button class="gm-modal-close" onclick="closeModal('downloadModal')" aria-label="Close">&times;</button>
+    <div class="gm-modal-icon">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--gold)"><path d="M19 9h-4V3H9v6H5l7 7 7-7zm-14 9v2h14v-2H5z"/></svg>
+    </div>
+    <h2 class="gm-modal-title">Get the Gimmzi App</h2>
+    <p class="gm-modal-body">Download free and start earning points at local businesses today.</p>
+    <div class="gm-store-btns">
+      <a href="https://apps.apple.com/us/app/gimmzi-smart-rewards/id6502775032" target="_blank" rel="noopener" class="gm-store-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        <div>
+          <small>Download on the</small>
+          <strong>App Store</strong>
+        </div>
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.gimmzi&hl=en_US" target="_blank" rel="noopener" class="gm-store-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M3.18 23.76c.3.16.64.18.96.06l13.2-7.62-2.82-2.84-11.34 10.4zm16.5-9.54L17.1 12.5l2.58-2.58 2.7 1.56c.78.44.78 1.76 0 2.22l-.7.52zm-16.5-8.98L13.5 15.66l2.82-2.84L3.14 5.2c-.32-.14-.66-.12-.96.04zm13.2 7.62-11.34 10.4.96.06 13.2-7.62-2.82-2.84z"/></svg>
+        <div>
+          <small>Get it on</small>
+          <strong>Google Play</strong>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- WAITLIST MODAL -->
+<div id="waitlistModal" class="gm-modal-overlay" onclick="closeModalOnOverlay(event,'waitlistModal')">
+  <div class="gm-modal" style="max-width:500px; text-align:left;">
+    <button class="gm-modal-close" onclick="closeModal('waitlistModal')" aria-label="Close">&times;</button>
+    <div class="gm-modal-icon" style="text-align:center;">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--gold)"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+    </div>
+    <h2 class="gm-modal-title" style="text-align:center;">Lock In Your Rate</h2>
+    <p class="gm-modal-body" style="text-align:center;">Secure your founding member pricing before the full launch this summer.</p>
+    <div id="wlForm" class="gm-form">
+      <div style="display:flex; gap:10px;">
+        <input id="wlFirst" type="text" placeholder="First Name" class="gm-input" style="flex:1;" />
+        <input id="wlLast" type="text" placeholder="Last Name" class="gm-input" style="flex:1;" />
+      </div>
+      <input id="wlEmail" type="email" placeholder="Email Address" class="gm-input" />
+      <input id="wlBizName" type="text" placeholder="Business Name" class="gm-input" />
+      <select id="wlBizType" class="gm-input gm-select">
+        <option value="" disabled selected>Business Type</option>
+        <option value="restaurant">Restaurant / Bar / Cafe</option>
+        <option value="retail">Retail / Boutique</option>
+        <option value="entertainment">Entertainment / Venue</option>
+        <option value="health">Health / Beauty / Wellness</option>
+        <option value="hotel">Hotel / Short-Term Rental</option>
+        <option value="apartment">Apartment Community / HOA</option>
+        <option value="service">Professional Services</option>
+        <option value="other">Other</option>
+      </select>
+      <button onclick="handleWaitlistSubmit()" class="gm-submit-btn">Join the Waitlist</button>
+    </div>
+    <div id="wlSuccess" class="gm-success" style="display:none;">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="var(--gold)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+      <p style="text-align:center;">You're on the list!<br><span style="font-size:0.85rem;color:rgba(255,255,255,0.6);">We'll be in touch before the launch.</span></p>
+    </div>
+  </div>
+</div>
+
+<style>
+.hero-trust-strip {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.hero-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.55);
+  font-weight: 500;
+}
+.hero-trust-divider {
+  width: 1px;
+  height: 14px;
+  background: rgba(255,255,255,0.15);
+}
+.gm-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(4px);
+  animation: gmFadeIn 0.2s ease;
+}
+.gm-modal-overlay.active { display: flex; }
+@keyframes gmFadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes gmSlideUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+.gm-modal {
+  background: #0f1f3d;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 40px 36px;
+  max-width: 440px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  animation: gmSlideUp 0.25s ease;
+}
+.gm-modal-close {
+  position: absolute;
+  top: 16px; right: 20px;
+  background: none; border: none;
+  color: rgba(255,255,255,0.5);
+  font-size: 24px; cursor: pointer;
+  line-height: 1;
+  transition: color 0.2s;
+}
+.gm-modal-close:hover { color: #fff; }
+.gm-modal-icon { margin-bottom: 16px; }
+.gm-modal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 10px;
+}
+.gm-modal-body {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.95rem;
+  margin: 0 0 28px;
+  line-height: 1.6;
+}
+.gm-store-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.gm-store-btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 20px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s;
+  text-align: left;
+}
+.gm-store-btn:hover {
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.25);
+}
+.gm-store-btn div { display: flex; flex-direction: column; }
+.gm-store-btn small { font-size: 0.7rem; color: rgba(255,255,255,0.55); }
+.gm-store-btn strong { font-size: 1rem; }
+.gm-form { display: flex; flex-direction: column; gap: 12px; }
+.gm-input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1.5px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+.gm-input:focus { border-color: var(--gold, #f6a500); }
+.gm-input::placeholder { color: rgba(255,255,255,0.35); }
+.gm-select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='rgba(255,255,255,0.4)' d='M0 0l6 8 6-8z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  cursor: pointer;
+}
+.gm-select option { background: #0f1f3d; color: #fff; }
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: var(--gold, #f6a500);
+  color: #0a0a0a;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.gm-submit-btn:hover { opacity: 0.9; }
+.gm-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+}
+.gm-success p { color: rgba(255,255,255,0.85); margin: 0; font-size: 1rem; }
+</style>
+
 <script>
+  function openDownloadModal(e) { e.preventDefault(); document.getElementById('downloadModal').classList.add('active'); }
+  function openWaitlistModal(e) { e.preventDefault(); document.getElementById('waitlistModal').classList.add('active'); }
+  function closeModal(id) { document.getElementById(id).classList.remove('active'); }
+  function closeModalOnOverlay(e, id) { if (e.target === e.currentTarget) closeModal(id); }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closeModal('downloadModal');
+      closeModal('waitlistModal');
+    }
+  });
+  function handleWaitlistSubmit() {
+    const first = document.getElementById('wlFirst');
+    const last = document.getElementById('wlLast');
+    const email = document.getElementById('wlEmail');
+    const bizName = document.getElementById('wlBizName');
+    const bizType = document.getElementById('wlBizType');
+
+    // Validate all fields
+    let valid = true;
+    [first, last, email, bizName, bizType].forEach(el => el.style.borderColor = '');
+    if (!first.value.trim()) { first.style.borderColor = '#e53e3e'; first.focus(); valid = false; }
+    else if (!last.value.trim()) { last.style.borderColor = '#e53e3e'; last.focus(); valid = false; }
+    else if (!email.value || !email.value.includes('@')) { email.style.borderColor = '#e53e3e'; email.focus(); valid = false; }
+    else if (!bizName.value.trim()) { bizName.style.borderColor = '#e53e3e'; bizName.focus(); valid = false; }
+    else if (!bizType.value) { bizType.style.borderColor = '#e53e3e'; bizType.focus(); valid = false; }
+    if (!valid) return;
+
+    // Submit to Google Sheet via Apps Script — replace with your deployed Web App URL
+    const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyCE5KTuF0FS6HH_bNB2LIf9TkOav5rvpqmtChL4wgjsk8fy7uDyk1RH7ADKOD6D084/exec';
+    const btn = document.querySelector('#wlForm .gm-submit-btn');
+    btn.textContent = 'Submitting...';
+    btn.disabled = true;
+
+    fetch(APPS_SCRIPT_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        firstName: first.value.trim(),
+        lastName: last.value.trim(),
+        email: email.value.trim(),
+        businessName: bizName.value.trim(),
+        businessType: bizType.value
+      }),
+      mode: 'no-cors' // Apps Script requires no-cors
+    })
+    .then(() => {
+      document.getElementById('wlForm').style.display = 'none';
+      document.getElementById('wlSuccess').style.display = 'flex';
+    })
+    .catch(() => {
+      document.getElementById('wlForm').style.display = 'none';
+      document.getElementById('wlSuccess').style.display = 'flex';
+    });
+  }
+  document.getElementById('wlEmail').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') handleWaitlistSubmit();
+    this.style.borderColor = '';
+  });
+</script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   function handleBizSubmit() {
     const input = document.getElementById('bizEmail');
     const form = document.getElementById('bizForm');
@@ -854,12 +1119,4 @@
       }
     });
   }, { threshold: 0.08 });
-  document.querySelectorAll('.consumer-section, .business-section, .feedback-section, .summer-section, .cities-section, .waitlist-section').forEach(el => {
-    el.style.opacity = '0';
-    observer.observe(el);
-  });
-</script>
-<!-- HubSpot Live Chat -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/21269229.js"></script>
-</body>
-</html>
+  document.querySelectorAll('.consumer-section, .business-section, .feedback-section, .summer-section, .cities-section, .waitlist-section').forE
