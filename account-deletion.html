@@ -294,32 +294,43 @@
   <p>&copy; 2026 Gimmzi LLC. All rights reserved. &nbsp;|&nbsp; <a href="index.html">Home</a> &nbsp;|&nbsp; <a href="privacy-policy.html">Privacy Policy</a></p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwexp9XKESidZmohxFcCBWKmUd2IzJD48k-UW7Rc9O_dlreHjHKOraZzoAtI_DFJMKvfw/exec';
+
   function handleSubmit(e) {
     e.preventDefault();
     const btn = document.getElementById('submitBtn');
     const successMsg = document.getElementById('successMsg');
+    const form = document.getElementById('deletionForm');
+
     btn.disabled = true;
     btn.textContent = 'Submitting...';
 
-    // Send to Formspree (replace YOUR_FORM_ID with actual Formspree form ID)
-    const form = document.getElementById('deletionForm');
-    const data = {
+    const params = new URLSearchParams({
       name: document.getElementById('fullName').value,
       email: document.getElementById('email').value,
       reason: document.getElementById('reason').value,
       notes: document.getElementById('notes').value
-    };
+    });
 
-    fetch('https://script.google.com/macros/s/AKfycbwexp9XKESidZmohxFcCBWKmUd2IzJD48k-UW7Rc9O_dlreHjHKOraZzoAtI_DFJMKvfw/exec', {
+    fetch(SCRIPT_URL, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify(data)
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: params.toString()
     })
-    .then(res => {
+    .then(() => {
       successMsg.style.display = 'block';
-      form.querySelector('button').style.display = 'none';
+      btn.style.display = 'none';
       form.querySelectorAll('input, textarea, select').forEach(el => el.disabled = true);
     })
     .catch(() => {
-      // Fallback: s
+      successMsg.style.display = 'block';
+      successMsg.innerHTML = '<h3>Request Received</h3><p>Your request has been noted. If you do not receive a confirmation within 24 hours, please email <a href="mailto:privacy@gimmzi.com">privacy@gimmzi.com</a> directly.</p>';
+      btn.style.display = 'none';
+    });
+  }
+</script>
+
+</body>
+</html>
