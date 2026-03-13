@@ -10,6 +10,9 @@
     { "source": "/faq", "destination": "/", "permanent": true },
     { "source": "/blog", "destination": "/", "permanent": true },
     { "source": "/privacy-policy", "destination": "/", "permanent": true },
-    { "source": "/terms", "destination": "/", "permanent": true }
+    { "source": "/terms", "destination": "/", "permanent": true },
+    { "source": "/download", "destination": "/", "permanent": true },
+    { "source": "/newsletter", "destination": "/", "permanent": true },
+    { "source": "/demo", "destination": "/", "permanent": true }
   ]
 }
