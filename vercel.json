@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    { "source": "/small-business", "destination": "/", "permanent": true },
+    { "source": "/how-it-works", "destination": "/", "permanent": true },
+    { "source": "/community-partner", "destination": "/", "permanent": true },
+    { "source": "/about", "destination": "/", "permanent": true },
+    { "source": "/contact", "destination": "/", "permanent": true },
+    { "source": "/merchants", "destination": "/", "permanent": true },
+    { "source": "/consumers", "destination": "/", "permanent": true },
+    { "source": "/faq", "destination": "/", "permanent": true },
+    { "source": "/blog", "destination": "/", "permanent": true },
+    { "source": "/privacy-policy", "destination": "/", "permanent": true },
+    { "source": "/terms", "destination": "/", "permanent": true }
+  ]
+}
